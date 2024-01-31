@@ -6,109 +6,119 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+a :hover{
+  color: var(--white);
+  font-size: 1rem;
+}
+.cntrl a i{
+  color:var(--goldenrod);
+}
+
+.cntrl hr{
+  width: 50%;
+}
+
 /* colors */
 :root{
   --navyBlue:rgba(4, 4, 32, 0.943);
   --blue:rgba(74, 74, 255, 0.829);
   --white: white;
   --box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+  --green:rgb(22, 67, 22);
+  --goldenrod: goldenrod;
 }
 
 /* navigation bar container it is every thing on the landing page */
 .navbar_container{
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  background-color:rgb(22, 67, 22);
+  background-color:var(--green);
   background-size: 100vh;
   height: 100vh;
   opacity: 90%;
 }
 
 .cntrl{
-  margin: 4.5rem 0 0 -7px;
-  width: 50%;
+  margin: 1.5rem 0 0 3px;
+  width: 40%;
 }
 
+
 .home{
-  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  padding: 1rem 1rem;
   border: 1px solid var(--navyBlue) ;
   align-items: center;
   width:1rem;
   height:1rem;
-  margin: 1rem 0 0 3rem;
+  margin: 1rem 0 1rem 3rem;
   border-radius: 50%;
   box-shadow: var(--box-shadow);
 }
 
-.home i{
-  margin: 0 0 0 -4.5px;
-  color: var(--white);
-}
 
 .about{
-  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  padding: 1rem 1rem;
   border: 1px solid var(--navyBlue) ;
   align-items: center;
-  width:2rem;
-  height:2rem;
-  margin: 1rem 0 0 8rem;
+  width:1rem;
+  height:1rem;
+  margin: 1rem 0 1rem 3rem;
   border-radius: 50%;
   box-shadow: var(--box-shadow);
 }
-
-.about i{
-  margin: 0 0 0 4.5px;
-  color: var(--white);
-}
+ 
 
 .contact{
-  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  padding: 1rem 1rem;
   border: 1px solid var(--navyBlue) ;
   align-items: center;
-  width:0.5rem;
-  height:0.5rem;
-  margin: 1rem 0 0 3rem;
+  width:1rem;
+  height:1rem;
+  margin: 1rem 0 1rem 3rem;
   border-radius: 50%;
   box-shadow: var(--box-shadow);
 }
 
-.contact i{
-  margin: 0 0 3rem -4.5px;
-  color: var(--white);
-}
-.contact:hover{
-  background-color: rgb(63, 255, 111);
-  transform: translateY(2px);
+.hnav{
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  padding: 0.3rem;
+  margin: 0 0 0 -3rem;
+  font-size: 50%;
 }
 
+
 .headtxt{
-  margin: 9rem;
+  margin: 9rem 0 0 3rem;
   color: white;
+  flex-grow:3rem;
 
 }
 .Statelogo{
-  width: 20%;
+  width: 10%;
   height: 20%;
   margin: 2rem 3rem -4rem 0;
+  position: relative;
 }
- img{
-  size: 50%;
- }
 
 /* Dropdown Button */
 .dropbtn {
-
-    /* background-color: #4CAF50; */
-  /* color: white; */
   float: right;
   padding: 16px;
-  margin: 3rem 4rem 0 0;
+  margin: 3rem 4rem 0 -5rem;
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 20px;
-
 }
 
 /* Dropdown button on hover & focus */
@@ -153,4 +163,25 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
+}
+
+
+/* collaboration */
+
+.aboutUs{
+  display: flex;
+  /* flex-direction: row; */
+  box-sizing: border-box;
+  justify-content: center;
+}
+.abt_tittle{
+/* align-self: center; */
+  justify-self: center;
+
+}
+/* about body styling */
+.about_body{
+  display: flex;
+  height: fit-content;
+  align-items: stretch;
 }
