@@ -31,6 +31,7 @@ a :hover{
   --box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
   --green:rgb(22, 67, 22);
   --goldenrod: goldenrod;
+  --red:red;
 }
 
 /* navigation bar container it is every thing on the landing page */
@@ -43,12 +44,13 @@ a :hover{
   height: 100vh;
   opacity: 90%;
 }
-
+/* side controlls */
 .cntrl{
   margin: 1.5rem 0 0 3px;
   width: 40%;
 }
 
+/* Home button  */
 
 .home{
   display: flex;
@@ -62,7 +64,7 @@ a :hover{
   box-shadow: var(--box-shadow);
 }
 
-
+/* about button */
 .about{
   display: flex;
   padding: 1rem 1rem;
@@ -75,8 +77,22 @@ a :hover{
   box-shadow: var(--box-shadow);
 }
  
-
+/* Contact button */
 .contact{
+  display: flex;
+  padding: 1rem 1rem;
+  border: 1px solid var(--navyBlue) ;
+  align-items: center;
+  width:1rem;
+  height:1rem;
+  margin: 1rem 0 1rem 3rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+/* Event button */
+
+.event{
   display: flex;
   padding: 1rem 1rem;
   border: 1px solid var(--navyBlue) ;
@@ -101,7 +117,23 @@ a :hover{
   margin: 9rem 0 0 3rem;
   color: white;
   flex-grow:3rem;
+}
 
+.headtxt .announcement{
+  float: right;
+  margin: -5.5rem 6rem 0 0;
+  font-family: sans-serif;
+}
+
+.headtxt .announcement:hover{
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  padding: 1rem 1rem  1rem 1rem ;
+}
+
+.headtxt .announcement span{
+  margin: 0 0 0 2rem;
+  color: var(--red);
 }
 .Statelogo{
   width: 10%;
@@ -170,18 +202,59 @@ a :hover{
 
 .aboutUs{
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
   box-sizing: border-box;
   justify-content: center;
+  background-color: pink;
+}
+#abt{
+  margin: 3rem 0 0 0;
 }
 .abt_tittle{
-/* align-self: center; */
   justify-self: center;
-
+  align-self: center;
+  /* padding: 1rem 1rem 1rem 1rem; */
+  /* margin: 0 0 2rem; */
 }
 /* about body styling */
 .about_body{
   display: flex;
+  box-sizing: border-box;
   height: fit-content;
-  align-items: stretch;
+  align-items: center;
+  /* text-align: center; */
+  /* justify-content: center; */
+  width: 90%;
+}
+
+.abttxt{
+  margin: 0.5rem 0 2rem 6rem;
+  font-size: 80%;
+  background-color: var(--goldenrod);
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 20px;
+}
+
+/* contact Styling */
+.contact i{
+  color: var(--goldenrod);
+}
+/* Show the contact dropdown  on hover */
+.contact:hover .dropdown-content {
+  display: block;
+}
+/* contact content dropdown styling */
+.contact .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:var(--goldenrod);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Change color of dropdown links on hover */
+.contact .dropdown-content a:hover {
+  background-color: #f1f1f1;
+  width: 50%;
+  border-top-right-radius:20px;
+  display: flex;
 }
