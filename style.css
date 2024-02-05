@@ -46,8 +46,9 @@ a :hover{
 }
 /* side controlls */
 .cntrl{
-  margin: 1.5rem 0 0 3px;
+  margin: 3rem 0 0 -40rem;
   width: 40%;
+  position: fixed;
 }
 
 /* Home button  */
@@ -114,7 +115,7 @@ a :hover{
 
 
 .headtxt{
-  margin: 9rem 0 0 3rem;
+  margin: 9rem 0 0 12rem;
   color: white;
   flex-grow:3rem;
 }
@@ -198,24 +199,37 @@ a :hover{
 }
 
 
-/* collaboration */
+/* about page settings */
 
 .aboutUs{
-  display: flex;
+  display: flex;  
   flex-direction: column;
   box-sizing: border-box;
   justify-content: center;
-  background-color: pink;
+  background-image: url(./image/atlas.jpg);
+  width: fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  border-image-width: auto;
 }
 #abt{
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0 2rem;
+  padding: 0 0 0 2rem;
 }
 .abt_tittle{
-  justify-self: center;
+  justify-self: left;
   align-self: center;
-  /* padding: 1rem 1rem 1rem 1rem; */
-  /* margin: 0 0 2rem; */
+  align-content: center;
+  background-color: var(--navyBlue);
+  color: var(--white);
+  opacity: 100%;
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 0 0 3rem;
 }
+
 /* about body styling */
 .about_body{
   display: flex;
@@ -228,11 +242,17 @@ a :hover{
 }
 
 .abttxt{
-  margin: 0.5rem 0 2rem 6rem;
-  font-size: 80%;
-  background-color: var(--goldenrod);
+  margin: 0.5rem 0 2rem 15rem;
+  font-size: 50%;
+  background-color: var(--navyBlue);
   padding: 2rem 2rem 2rem 2rem;
-  border-radius: 20px;
+  opacity: 90%;
+}
+
+.abttxt p{
+  line-height:20px;
+  font-size: 10px;
+  color: var(--white);
 }
 
 /* contact Styling */
@@ -258,3 +278,19 @@ a :hover{
   border-top-right-radius:20px;
   display: flex;
 }
+
+/* footer styles */
+.foot{
+  color: var(--goldenrod);
+  background-color: var(--navyBlue);
+}
+
+.socials{
+  padding: 0.5 0.5 0.5 0.5;
+}
+ .socials a i {
+  padding: 5px 5px;
+  margin: 0 0 0 0;
+  background-color: var(--white);
+  border-radius: 50%;
+ }
