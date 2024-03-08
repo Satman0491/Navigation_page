@@ -1,88 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NavBar</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
+
 <body>
-    <div class="navbar_container">
-        
+    <div class="navbar_container" id="navigationpage">
+
         <div class="cntrl">
-            <hr>  <!-- horizontal line -->
+            <hr>
+            <!-- horizontal line -->
             <a href="#" class="home">
                 <i class="fa-solid fa-house"></i><br>
                 <h1 class="hnav"> Home </h1>
             </a>
-            <hr> <!-- horizontal line -->
-            
+            <hr>
+            <!-- horizontal line -->
 
-            <a href="#abt" class="about">
+
+            <a href="#abt" class="about" id="about">
                 <i class="fa-solid fa-address-card"></i>
                 <h1 class="hnav">About</h1>
             </a>
-            <hr>  <!-- horizontal line -->
-    
-            <div class="contact" >
-                <i class="fa-solid fa-address-book"></i>
+            <hr>
+            <!-- horizontal line -->
+
+            <div class="contact">
+                <i class="fa-solid fa-address-book" id="dropBtn"></i>
                 <h1 class="hnav">Contact</h1>
-                <div class="dropdown-content">
+                <div class="contactDropdown">
                     <a href="tel:"> <i class="fa-solid fa-phone"></i> Phone</a>
                     <a href="https://web.facebook.com/PlminOfLands"> <i class="fa-brands fa-facebook"></i> facebook</a>
                     <a href="#"> <i class="fa-brands fa-instagram"></i>Instagram</a>
                     <a href="#"> <i class="fa-brands fa-linkedin"> </i>LinkedIn</a>
                     <a href="#"> <i class="fa-solid fa-envelope"></i> Email</a>
                     <a href="#"> <i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-                </div>  
+                </div>
             </div>
-            <hr>  <!-- horizontal line -->
+            <hr>
+            <!-- horizontal line -->
 
-            <a href="#" class="event">
+            <a href="./events.html" class="event">
                 <i class="fa-regular fa-calendar"></i>
                 <h1 class="hnav">Events</h1>
             </a>
-            <hr> <!-- horizontal line -->
+            <hr>
+            <!-- horizontal line -->
         </div>
-        
+
+
+        <h6 class="announcement"> <span> <i class="fa-solid fa-bullhorn"></i></span></i><br> Announcement</h6>
         <div class="headtxt">
-            <h6 class="announcement"> <span> <i class="fa-solid fa-bullhorn"></i></span></i><br> Announcement</h6>
             <h1 class="ministry">WELCOME TO <br> The Plateau State Ministry of lands Survey and Town Planning </h1>
         </div>
-       
-        <div class="dropdown">
-            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-            <div class="dropdown-content">
-              <a href="#">Administrative</a>
-              <a href="#">Lands</a>
-              <a href="#">Site and services</a>
-              <a href="#">Town Planning</a>
-              <a href="#">Survey</a>
-              <a href="#">Records</a>
-              <a href="./landreg.html">Land Registration</a>
+
+
+        <div class="logoMenu">
+            <div class="stateLogo">
+                <img class="Statelogo" src="./image/PLS.png" alt="State" width="80rem" height="80rem">
             </div>
+
+
+            <div class="menuDropDown">
+                <i class="fa-solid fa-bars" role="button" tabindex="0" id="dropBtn" onclick="dropDown()"></i>
+                <div class="dropdown-content" id="dropCont">
+                    <ul>
+                        <li><a href="#">Admim</a></li>
+                        <li><a href="#">Survey Department</a></li>
+                        <li><a href="#">Record Department</a></li>
+                        <li><a href="#">Townn Planning</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
 
-        <img class="Statelogo" src="./image/PLS.png" alt="State">
+        <button class="login">
+            <a href="#">LOGIN</a>
+        </button>
+
+        <a href="#" class="signup">sign in to access our service</a>
+
 
     </div>
+
+
     <div class="aboutUs">
         <h1 class="abt_tittle" id="abt">ABOUT</h1>
         <div class="about_body">
             <div class="abttxt">
-             <p> The Plateau State Ministry of Lands, Survey and Town Planning is a government agency responsible for the management of land, surveying, and town planning in Plateau State, Nigeria. 
-                 <br>The ministry plays a crucial role in the sustainable development and management of land resources in the state.
-     
-                 One of the primary functions of the ministry is to oversee the allocation and management of land in Plateau State. This includes the issuance of land titles, allocation of land for various purposes such as residential, commercial, and agricultural use, and the regulation of land transactions. The ministry also works to ensure that land is used in a sustainable and equitable manner, taking into consideration the needs of the local population and the environment.
-                 
-                 In addition, the ministry is responsible for surveying and mapping activities in the state. This includes the demarcation of land boundaries, the production of topographic maps, and the provision of surveying services for various development projects. Accurate surveying and mapping are essential for effective land management and planning, as well as for the implementation of infrastructure projects.
-                 
-                 The ministry also plays a key role in town planning and urban development. It is responsible for creating and implementing land use plans, zoning regulations, and building codes to ensure orderly and sustainable development in urban and rural areas. This includes the provision of infrastructure such as roads, water supply, and sanitation facilities, as well as the preservation of green spaces and natural resources.
-                 
-                 Overall, the Plateau State Ministry of Lands, Survey and Town Planning plays a vital role in the management and development of land resources in the state. By promoting sustainable land use and effective urban planning, the ministry contributes to the overall well-being and prosperity of the people of Plateau State.</p>
-            </div> 
+                <p> The Plateau State Ministry of Lands, Survey and Town Planning is a government agency responsible for the management of land, surveying, and town planning in Plateau State, Nigeria.
+                    <br>The ministry plays a crucial role in the sustainable development and management of land resources in the state. One of the primary functions of the ministry is to oversee the allocation and management of land in Plateau State.
+                    This includes the issuance of land titles, allocation of land for various purposes such as residential, commercial, and agricultural use, and the regulation of land transactions. The ministry also works to ensure that land is used
+                    in a sustainable and equitable manner, taking into consideration the needs of the local population and the environment. In addition, the ministry is responsible for surveying and mapping activities in the state. This includes the demarcation
+                    of land boundaries, the production of topographic maps, and the provision of surveying services for various development projects. Accurate surveying and mapping are essential for effective land management and planning, as well as for
+                    the implementation of infrastructure projects. The ministry also plays a key role in town planning and urban development. It is responsible for creating and implementing land use plans, zoning regulations, and building codes to ensure
+                    orderly and sustainable development in urban and rural areas. This includes the provision of infrastructure such as roads, water supply, and sanitation facilities, as well as the preservation of green spaces and natural resources.
+                    Overall, the Plateau State Ministry of Lands, Survey and Town Planning plays a vital role in the management and development of land resources in the state. By promoting sustainable land use and effective urban planning, the ministry
+                    contributes to the overall well-being and prosperity of the people of Plateau State.</p>
+            </div>
         </div>
     </div>
 
@@ -97,6 +121,7 @@
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
     </div>
-   <script src="index.js"></script> 
+    <script src="index.js"></script>
 </body>
+
 </html>
