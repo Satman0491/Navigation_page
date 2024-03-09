@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .login_form {
+            border: 1px solid black;
+            width: 60%;
+            border-radius: 20px;
+            padding: 4rem 0 2rem 0;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            box-sizing: border-box;
+        }
+        
+        h3 {
+            margin: 0 0 0 3rem;
+        }
+        
+        input {
+            margin: 0rem 1rem 1rem 2rem;
+            border-radius: 20px;
+            padding: 0.5rem;
+            width: 30rem;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        label {
+            margin: 0 0 0 8rem;
+            color: green;
+        }
+        
+        textarea {
+            border-radius: 20px;
+            text-indent: 10px;
+            width: 30rem;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .termsOfService {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+            width: 30rem;
+            align-items: center;
+            /* background-color: yellow; */
+        }
+        
+        .termsOfService label {
+            /* background-color: green; */
+            margin: 0 0rem 0 0rem;
+            font-family: inherit;
+            justify-self: center;
+            align-self: center;
+            font-size: 10px;
+        }
+        
+        .termsOfService input {
+            margin: 0 0 0 0;
+            border-radius: 20px;
+            padding: 0;
+            width: 0 auto;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        button {
+            border-radius: 20px;
+            padding: 0.5rem;
+            width: 10rem;
+            justify-self: center;
+            margin: 1rem 0 0 25rem;
+        }
+        
+        .logInLink {
+            text-decoration: none;
+            font-size: 10px;
+        }
+        
+        .logInLinkTop {
+            text-decoration: none;
+            font-size: 10px;
+            margin: -3rem 0 3rem 25rem;
+            text-align: center;
+            border: 1px solid black;
+            /* background-color: grey; */
+            width: 30%;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <form class="login_form">
+            <h3>SIGN UP</h3><br>
+
+            <a href="./login.html" class="logInLinkTop">have an account already click here to login</a>
+            <!-- <label for="email"> Email</label> -->
+            <label for="Email Address or Phone Number">Email Address or Phone Number</label>
+            <input type="text" placeholder=" Enter YourEmail Address or Phone Number" autocomplete="on" required><br>
+
+            <label for="first name">First Name</label>
+            <input type="text" placeholder="First Name" autocomplete="on" required>
+
+            <label for="Last Name">Last Name</label>
+            <input type="text" placeholder="Enter Your Last Name" minlength="6" required>
+
+
+            <label for="Gender">Gender</label>
+            <input list="Gender" placeholder="what is Your Gender" required>
+            <datalist id="Gender">
+                <option value="Male">
+                <option value="Female">
+            </datalist>
+
+            <label for="Date Of Birth">Date Of Birth</label>
+            <input type="date" placeholder=" Enter Your Date Of Birth" minlength="6" required><br>
+
+
+            <label for="Address">Address</label>
+            <textarea name="Address" id="address" cols="45" rows="4" placeholder="Enter Your Address"> </textarea> <br>
+
+            <label for="Enter a Strong password">Password</label>
+            <input type="text" placeholder="Enter a strong password" minlength="6" required><br>
+
+            <label for="Confirm Your password">Confirm Password</label>
+            <input type="text" placeholder="confrim your password" minlength="6" required>
+
+            <div class="termsOfService">
+                <label for="terms and condition">I Agree to the  <a href="#">terms of Service</a> and <a href="#">Privacy Policy</a></label> <br>
+                <input type="checkbox" class="checkbox"><br>
+            </div>
+
+
+            <button class="loginButton">Done</button>
+
+            <!-- <a href="./login.html" class="logInLink">have an account already click here to login</a> -->
+        </form>
+    </main>
+
+</body>
+
+</html>

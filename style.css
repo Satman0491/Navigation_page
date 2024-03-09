@@ -402,16 +402,22 @@
     .foot {
         color: var(--goldenrod);
         background-color: var(--navyBlue);
+        flex-direction: row;
+        width: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
     
     .socials {
         padding: 0.5 0.5 0.5 0.5;
+        margin: 0rem 0rem 0rem 20rem;
+        justify-self: center;
+        align-self: center;
     }
     
     .socials a i {
         padding: 5px 5px;
         margin: 0 0 0 0;
-        background-color: var(--white);
         border-radius: 50%;
     }
     /* EVENT HTML STYLING */
